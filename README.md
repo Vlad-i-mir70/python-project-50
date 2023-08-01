@@ -9,3 +9,6 @@
 
 [Пример работы пакета](https://asciinema.org/a/giXKnW4kYCHScJMIfvWzWLSop)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/48706cf0a670a27191c3/maintainability)](https://codeclimate.com/github/Vlad-i-mir70/python-project-50/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/48706cf0a670a27191c3/test_coverage)](https://codeclimate.com/github/Vlad-i-mir70/python-project-50/test_coverage)
+
