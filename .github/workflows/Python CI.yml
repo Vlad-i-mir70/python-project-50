@@ -14,8 +14,9 @@ jobs:
         with:
           python-version: 3.10.6
       - name: Install dependencies
-        run: #|
+        run: |
           pip install poetry
+          poetry add --group dev flake8
           make install
       - name: Run linter and pytest
         run: #|
