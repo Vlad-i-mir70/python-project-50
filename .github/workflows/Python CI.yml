@@ -17,6 +17,7 @@ jobs:
         run: |
           pip install poetry
           poetry add --group dev flake8
+          poetry add -G dev pytest
           make install
       - name: Run linter and pytest
         run: |
