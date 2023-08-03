@@ -18,9 +18,9 @@ jobs:
           pip install poetry
           poetry add -G dev pytest
           make install
-      - name: Run linter and pytest
+      - name: Run Pytest
         run: #|
-          poetry run pytest
+          make test
       #- name: Test & publish code coverage
        # uses: paambaati/codeclimate-action@v3.2.0
         #if: github.ref_name == 'main'
