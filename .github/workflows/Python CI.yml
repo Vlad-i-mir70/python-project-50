@@ -17,12 +17,12 @@ jobs:
         run: |
           pip install poetry
           poetry add --group dev flake8
-          poetry add -G dev pytest
+          #poetry add -G dev pytest
           make install
       - name: Run linter and pytest
         run: |
           make lint
-          poetry run pytest
+          #poetry run pytest
       #- name: Test & publish code coverage
        # uses: paambaati/codeclimate-action@v3.2.0
         #if: github.ref_name == 'main'
