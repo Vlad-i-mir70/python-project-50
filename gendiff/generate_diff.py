@@ -21,4 +21,3 @@ def generate_diff(file_path1, file_path2):
     sorted_result = dict(sorted(result.items(), key=lambda x: x[0][2]))
     print(sorted_result)
     return sorted_result
-
