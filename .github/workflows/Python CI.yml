@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: 3.10.6
       - name: Install dependencies
-        run: #|
+        run: |
           pip install poetry
           poetry add flake8 
           make install
