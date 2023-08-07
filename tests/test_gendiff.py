@@ -54,4 +54,4 @@ def test_format_dict_to_string():
   "follow": False
 }
 
-    assert test_format_dict_to_string(test_dict) == {'host': 'hexlet.io', 'timeout': 50, 'proxy': '123.234.53.22', 'follow': False}
+    assert format_dict_to_string(test_dict) == {'host': 'hexlet.io', 'timeout': 50, 'proxy': '123.234.53.22', 'follow': False}
