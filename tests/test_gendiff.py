@@ -1,5 +1,5 @@
 from gendiff.generate_diff import generate_diff
-#from gendiff.format_dict_to_str import format_dict_to_string
+from gendiff.format_dict_to_str import format_dict_to_string
 #from gendiff.cli import args
 
 import json
@@ -47,8 +47,6 @@ def test_generate_diff2():
     assert result == {'- follow': False, '  host': 'hexlet.io', '- proxy': '123.234.53.22', '- timeout': 50, '+ timeout': 20, '+ verbose': True}
 
 #def test_format_dict_to_string():
-    #test_dict = {
-  #'one':'two'
-#}
+    result2 = test_dict = format_dict_to_string({'one':'two'})
 
-  #  assert format_dict_to_string(test_dict) == {'one':'two'}
+    assert result2 == {'one':'two'}
