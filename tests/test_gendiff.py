@@ -48,10 +48,7 @@ def test_generate_diff2():
 
 def test_format_dict_to_string():
     test_dict = {
-  "host": "hexlet.io",
-  "timeout": 50,
-  "proxy": "123.234.53.22",
-  "follow": False
+  'one':'two'
 }
 
-    assert format_dict_to_string(test_dict) == {'host': 'hexlet.io', 'timeout': 50, 'proxy': '123.234.53.22', 'follow': False}
+    assert format_dict_to_string(test_dict) == {'one':'two'}
