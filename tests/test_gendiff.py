@@ -49,4 +49,4 @@ def test_generate_diff2():
 #def test_format_dict_to_string():
     result2 = test_dict = format_dict_to_string({'one':'two'})
 
-    assert result2 == {'one':'two'}
+    assert result2 == "{'one':'two'}"
