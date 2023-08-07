@@ -4,7 +4,7 @@ import yaml
 
 def generate_diff(file_path1, file_path2):
 
-    if file_path1.endswith('.yaml'):
+    if file_path1.endswith(('.yml', '.yaml')):
         first_file_opened_yaml = yaml.safe_load(open(file_path1))
         second_file_opened_yaml = yaml.safe_load(open(file_path2))
         for i in first_file_opened_yaml:
