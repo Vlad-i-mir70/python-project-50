@@ -1,4 +1,4 @@
-install:
+ install:
 	poetry install
 gendiff:
 	poetry run gendiff
@@ -16,4 +16,4 @@ test:
 	poetry run pytest
 
 test-coverage:
-	poetry run pytest --cov=hexlet-code --cov-report xml
+	poetry run pytest --cov=hexlet-code --cov-report xml tests/
