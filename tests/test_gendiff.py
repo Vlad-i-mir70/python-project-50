@@ -1,4 +1,7 @@
 from gendiff.generate_diff import generate_diff
+from gendiff.format_dict_to_str import format_dict_to_string
+#from gendiff.cli import args
+
 import json
 import pytest
 
@@ -42,3 +45,13 @@ def file_path2():
 def test_generate_diff2():   
     result = generate_diff('tests/fixtures/file1.json', 'tests/fixtures/file2.json')
     assert result == {'- follow': False, '  host': 'hexlet.io', '- proxy': '123.234.53.22', '- timeout': 50, '+ timeout': 20, '+ verbose': True}
+
+def test_format_dict_to_string():
+    test_dict = {
+  "host": "hexlet.io",
+  "timeout": 50,
+  "proxy": "123.234.53.22",
+  "follow": False
+}
+
+    assert test_format_dict_to_string(test_dict) == {'host': 'hexlet.io', 'timeout': 50, 'proxy': '123.234.53.22', 'follow': False}
